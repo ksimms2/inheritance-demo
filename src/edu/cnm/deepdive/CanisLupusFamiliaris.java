@@ -1,11 +1,11 @@
 package edu.cnm.deepdive;
 
-public class CanisLupusFamiliaris extends CanisLupus {
+public class CanisLupusFamiliaris extends CanisLupus implements Trainable {
 
   private boolean goodBoy;
   
   public CanisLupusFamiliaris() {
-    this (true)
+    this (true);
     System.out.println("CanusLupusFamiliaris: :new");
     
   }
@@ -28,5 +28,10 @@ public class CanisLupusFamiliaris extends CanisLupus {
   public static void about() {
     
     System.out.println("Canis Lupus familiaris, is a subspecies of Canis lupus usually bred selectively.");
+  }
+  @Override
+  public void perform() {
+    System.out.println("play fetch");
+    
   }
 }
